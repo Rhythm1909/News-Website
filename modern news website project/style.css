@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: "Roboto" sans-serif;
+    color: rgb(2, 34, 2);
+    background: linear-gradient(to left, #0088ff, #fa7719 ,#c174f8);
+    
+}
+
+
+
+p {
+    font-family: sans-serif;
+    color: rgb(6, 6, 255);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+
+}
+
+.company-logo {
+    width: 120px;
+}
+
+.nav-links ul {
+    gap: 19px;
+    font-size: 25px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: #85a70b
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.search-bar {
+    height: 35px;
+    gap: 10px;
+}
+
+.news-in {
+    width: 200px;
+    height: 100%;
+
+    padding-inline: 12px;
+    border-radius: 15px;
+    font-family: sans-serif;
+
+    border: 2px solid #4681f4;
+}
+
+.search-button {
+    background-color: #4681f4;
+
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    font-family: sans-serif;
+
+
+}
+
+.search-button:hover {
+    background-color: #033598;
+}
+
+main{
+    margin-top: 80px;
+    padding-block: 20px;
+}
+
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+
+}
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: burlywood;
+    transform: translateY(-5px);
+}
+
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 12px;
+}
+
+.nav-item.active{
+
+    color: #4681f4;
+}
